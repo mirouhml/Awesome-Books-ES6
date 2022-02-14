@@ -4,11 +4,11 @@
 
 > This an implementation of a library website.
 
-![screenshot](./src/Screenshot4.png)
+![screenshot](./src/screenshot.png)
 
 ## Live Demo
 
-[Live Demo Link](https://mirouhml.github.io/awesome-books/)
+Not available yet.
 
 ## Built With
 
@@ -18,19 +18,13 @@
 - linters
 - VSCode
 
-## Authors
+## Author
 
 👤 **Mirouhml**
 
 - GitHub: [@mirouhml](https://github.com/mirouhml)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ammar-hamlaoui-514909189/)
 - Twitter: [@kuronomirou](https://twitter.com/kuronomirou)
-
-👤 **cynthiainga**
-
-- GitHub: [@cynthiainga](https://github.com/cynthiainga)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/cynthia-inga7/)
-- Twitter: [@CynthiaInga_C](https://twitter.com/CynthiaInga_C)
 
 ## 🤝 Contributing
 
