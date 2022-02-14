@@ -1,4 +1,4 @@
-export default function displayBooks(books) {
+export default (books) => {
   const booksContainer = document.getElementById('books-list');
   books.refresh();
   const booksList = books.getList();
