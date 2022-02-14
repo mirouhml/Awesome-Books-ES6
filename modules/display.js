@@ -9,8 +9,8 @@ export default function displayBooks(books) {
                     <button id="book${i}" type="button">Remove</button>`;
     booksContainer.appendChild(book);
     document.getElementById(`book${i}`).addEventListener('click', () => {
-    books.remove(i);
-    displayBooks(books);
+      books.remove(i);
+      displayBooks(books);
     });
   }
 }

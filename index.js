@@ -1,6 +1,7 @@
-import  Book from './modules/books.js';
-import  displayBooks from './modules/display.js';
+import Book from './modules/books.js';
+import displayBooks from './modules/display.js';
 import { DateTime } from './node_modules/luxon/src/luxon.js';
+
 const books = new Book();
 displayBooks(books);
 
@@ -11,22 +12,20 @@ button.addEventListener('click', () => {
   const author = document.getElementById('author');
   const message = document.getElementById('error-message');
   message.textContent = '';
-  console.log(books.search(title.value, author.value));
   if (title.value === '' || author.value === '') {
-      message.textContent = 'Please fill both the title and the author before adding.';
-      message.style.color = 'red';
+    message.textContent = 'Please fill both the title and the author before adding.';
+    message.style.color = 'red';
   } else if (!books.search(title.value, author.value)) {
-      books.add(title.value, author.value);
-      displayBooks(books);
-      title.value = '';
-      author.value = '';
-      message.textContent = 'The book has been added successfully.';
-      console.log()
-      message.style.color = 'green';
+    books.add(title.value, author.value);
+    displayBooks(books);
+    title.value = '';
+    author.value = '';
+    message.textContent = 'The book has been added successfully.';
+    message.style.color = 'green';
   } else {
-      const message = document.getElementById('error-message');
-      message.textContent = 'The book has already been added.';
-      message.style.color = 'red';
+    const message = document.getElementById('error-message');
+    message.textContent = 'The book has already been added.';
+    message.style.color = 'red';
   }
   setTimeout(() => { message.textContent = ' '; }, 5000);
 });

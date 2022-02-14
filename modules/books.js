@@ -1,7 +1,7 @@
 export default class Book {
   constructor() {
     if (localStorage.getItem('books')) {
-    this.list = JSON.parse(localStorage.getItem('books'));
+      this.list = JSON.parse(localStorage.getItem('books'));
     } else { this.list = []; }
   }
 
@@ -11,8 +11,8 @@ export default class Book {
 
   add(bookTitle, bookAuthor) {
     const book = {
-    title: bookTitle,
-    author: bookAuthor,
+      title: bookTitle,
+      author: bookAuthor,
     };
     this.list.push(book);
     this.populateStorage();
