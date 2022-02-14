@@ -1,4 +1,4 @@
-export default (books) => {
+var displayBooks = (books) => {
   const booksContainer = document.getElementById('books-list');
   books.refresh();
   const booksList = books.getList();
@@ -13,4 +13,6 @@ export default (books) => {
       displayBooks(books);
     });
   }
-}
+};
+
+export default (displayBooks);
