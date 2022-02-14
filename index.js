@@ -51,7 +51,7 @@ document.getElementById('menu-contact').addEventListener('click', () => {
 });
 
 const dateContainer = document.getElementById('date-time');
-setInterval(() => { 
+setInterval(() => {
   const today = DateTime.now();
   dateContainer.textContent = `${today.toLocaleString(DateTime.DATETIME_FULL)}`;
 }, 1000);

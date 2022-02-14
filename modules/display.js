@@ -1,4 +1,4 @@
-var displayBooks = (books) => {
+const displayBooks = (books) => {
   const booksContainer = document.getElementById('books-list');
   books.refresh();
   const booksList = books.getList();
