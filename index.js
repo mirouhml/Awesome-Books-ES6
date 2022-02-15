@@ -53,6 +53,6 @@ const dateContainer = document.getElementById('date-time');
 const timer = () => {
   const today = DateTime.now();
   dateContainer.textContent = `${today.toLocaleString(DateTime.DATETIME_FULL)}`;
-}
+};
 timer();
 setInterval(() => { timer(); }, 1000);
