@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-Not available yet.
+[Live Demo Link](https://mirouhml.github.io/awesome-books-es6/)
 
 ## Built With
 

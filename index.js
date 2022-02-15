@@ -1,7 +1,6 @@
 import Book from './modules/books.js';
 import displayBooks from './modules/display.js';
-// eslint-disable-next-line import/no-unresolved
-import { DateTime } from './node_modules/luxon/src/luxon.js';
+import { DateTime } from './modules/luxon.js';
 
 const books = new Book();
 displayBooks(books);
@@ -51,7 +50,9 @@ document.getElementById('menu-contact').addEventListener('click', () => {
 });
 
 const dateContainer = document.getElementById('date-time');
-setInterval(() => {
+const timer = () => {
   const today = DateTime.now();
   dateContainer.textContent = `${today.toLocaleString(DateTime.DATETIME_FULL)}`;
-}, 1000);
+}
+timer();
+setInterval(() => { timer(); }, 1000);
