@@ -2,7 +2,11 @@
 
 # Awesome books
 
-> This an implementation of a library website.
+An implementation of a library website, with 3 sections: 
+
+- List, where you can check your books list.
+- Add, where you can add a new book.
+- Contact, where you can check the contact information.
 
 ![screenshot](./src/screenshot.png)
 
